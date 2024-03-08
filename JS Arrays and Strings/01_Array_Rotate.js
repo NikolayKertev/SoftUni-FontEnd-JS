@@ -1,0 +1,13 @@
+function solve(arrayOfNumbers, iterationCount) {
+    let array = arrayOfNumbers;
+    let N = iterationCount;
+
+    for (let i = 0; i < N; i++) {
+        let firstElement = array.shift();
+        array.push(firstElement);
+    }
+
+    console.log(array.join(' '));
+}
+
+solve([51, 47, 32, 61, 21], 2);
